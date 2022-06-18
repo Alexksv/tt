@@ -1,0 +1,311 @@
+*,*:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: rgb(240, 240, 240);  
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; 
+}
+.header {
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    margin: 0 auto;
+    z-index: 50;
+}
+.header:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,175,203,0.7603992280505952) 34%, rgba(0,212,255,1) 100%);
+    z-index: 2;
+}
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 20px 0 0;
+}
+.logo a {
+    text-decoration: none;
+}
+.title_logo{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+}
+.text_logo {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    z-index: 2; 
+}
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2; 
+}
+.header_list li a:hover {
+    color: #D5B45B;
+    transition: all 0.3s ease 0s;
+}
+
+.header_list li{
+    position: relative;
+    list-style: none;
+    margin: 0 0 0 20px;
+    transition: all 0.3s ease 0s; 
+}
+.header_list>li:hover .submenu {
+    display: block;
+}
+.submenu  {
+    display: none;
+    position: absolute;
+    padding: 5px 0;
+    background-color: rgb(145, 147, 147);
+    z-index: 4;  
+}
+
+.submenu a {
+    font-size: 15px;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease 0s; 
+}
+.header_link {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+body.mouse .header_list>li:hover .submenu {
+    display: block;
+}
+body.touch .submenu.open{
+    display: block;
+}
+.box_promo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(72, 134, 216, 0.679);
+    text-align: center;
+    margin-top: 80px;
+    padding: 15px;
+    border-radius:  0 0 15px 15px;
+}
+.box_promo_item {
+    width: 310px;
+ 
+}
+.box_promo_item p {
+    text-align: center;
+}
+i.fa {
+    font-size: 70px;
+}
+.fa-rub, .fa-tint, .fa-check {
+    color: #ffffff;
+}
+section {
+    background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.item {
+    width: 450px;
+    min-height: 280px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 1, 1, 0.2);
+    margin: 15px 0 15px; 
+}
+.item h3 a:hover {
+    color:rgb(15, 32, 188)
+
+}
+.title_item_mp {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title_item_mp a {
+    text-decoration: none;
+    color: black;
+}
+.img_mp {
+    float: left;  
+}
+.text_mp {
+    text-align: justify;
+    font-size: 18px;
+    margin: 0;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(21,175,203,0.7603992280505952) 34%, rgba(0,212,255,1) 100%);
+}
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 100px;
+    padding: 10px 0 0 0 ;
+}
+.footer_block a {
+    text-decoration: none;
+    color: white;
+}
+.footer_block a:hover {
+    color: blue;
+}
+.contact {
+    display: flex;
+}
+.text_footer  {
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+.text_footer a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+.text_footer a:hover {
+    color: blue;
+}
+
+.footer_menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+i.fa {
+    font-size: 35px;
+    margin: 5px 0 0 10px;
+}
+.fa-telegram {
+    color: white;
+}
+.fa-envelope-o {
+    color: white;
+}
+.fa-envelope-o:hover {
+    color: #23108e;
+}
+.fa-telegram:hover {
+    color: #23108e;
+}
+
+/* Контакты */
+.contact_page {
+    margin-top: 80px;
+    display: block;
+
+    
+}
+.contact_view {
+    padding-left: 12px;
+}
+.maps {
+    padding: 10px; 
+}
+.contact_page p {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.contact_page a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.contact_page a:hover {
+    color: blue;
+}
+/* Веерные разбрызгиватели */
+
+.title_item_view {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 10px;
+}
+.text_rotator {
+    padding-left: 50px;
+}
+.text_rotator_mp {
+    text-align: justify; 
+}
+.title_rotator_mp {
+    color: rgb(61, 107, 234);
+}
+/* Насосы */
+table{
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+table th, tr, td{
+    border: 1px solid black;
+    text-align: center;
+}
+.table_view {
+    display: block;
+    align-content: center;
+}
+.text_nasos {
+    max-width: 600px;
+    text-align: justify;
+    margin: 15px auto;
+}
+.item_sp {
+    display: block;
+}
+.text_sist_poliv {
+    max-width: 900px;
+    text-align: justify;
+    margin: 15px auto;
+}
+.title_sp {
+    text-align: center;
+    color: blue;
+}
+.item_sp ul {
+    margin: 15px auto;
+}
+.item_sp li {
+    max-width: 900px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+
